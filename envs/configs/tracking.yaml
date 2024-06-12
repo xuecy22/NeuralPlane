@@ -1,0 +1,43 @@
+# atmos config
+airspeed: 0
+noise_scale: 0
+
+# simulation config
+sim_freq: 60
+solver: euler
+dt: 0.02
+num_agents: 1
+num_states: 12
+num_controls: 5
+num_actions: 3
+num_observation: 22
+max_steps: 2500             # episode length: 200s
+
+# aircraft config
+altitude_limit: 2500.0
+acceleration_limit: 300.0
+max_velocity: 3          # mh
+min_velocity: 0.01       # mh
+min_alpha: -20             # 度
+max_alpha: 45              # 度
+min_beta: -30
+max_beta: 30
+color: Red
+model: f16
+
+# target config
+max_distance: 2000 # feet
+min_distance: 2000  # feet
+max_check_interval: 2500                 # step
+min_check_interval: 300
+
+# init config
+init_state: {
+  init_altitude_ft: 20000,
+  init_vt_ft: 1100,
+  init_T: 2000
+}
+max_altitude: 20000
+min_altitude: 19000
+max_vt: 1200
+min_vt: 1000

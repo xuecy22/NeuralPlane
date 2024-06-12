@@ -1,0 +1,42 @@
+# task config
+preset_name: F16
+
+# simulation config
+sim_freq: 60
+solver: euler
+dt: 0.02
+num_agents: 4
+ego_agents: 2
+enm_agents: 2
+num_states: 12
+num_controls: 5
+num_actions: 4
+num_observation: 15
+max_steps: 2000             # episode length: 200s
+
+# aircraft config
+altitude_limit: 2500.0
+acceleration_limit: 600.0
+max_velocity: 3          # mh
+min_velocity: 0.01       # mh
+min_alpha: -20             # 度
+max_alpha: 45              # 度
+min_beta: -30
+max_beta: 30
+distance_limit: 200
+color: Red
+model: f16
+init_T: 2000
+target_dist: 3
+
+# init config
+max_altitude: 20000
+min_altitude: 19000
+max_vt: 1200
+min_vt: 1000
+max_heading: 0.5
+min_heading: -0.5
+max_npos: 10000
+min_npos: -10000
+max_epos: 10000
+min_epos: -10000
