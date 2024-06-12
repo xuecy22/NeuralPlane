@@ -1,0 +1,15 @@
+# pid config
+Kp: 10
+Ki: 0.3
+Kd: 0
+Kff: 0.3
+Kimax: 0.666
+
+# pitchcontroller config
+tau: 0.5
+rmax_pos: 0
+rmax_neg: 0
+roll_ff: 1
+
+# physics paramerters
+gravity: 32.174

@@ -1,0 +1,6 @@
+# pid config
+Kp: 5
+Ki: 25
+Kd: 0
+Kff: 80
+Kimax: 100

@@ -1,0 +1,23 @@
+# tecs parameters
+maxClimbRate: 254
+minSinkRate: 2
+maxSinkRate: 254
+timeConst: 5
+thrDamp: 0.5
+integGain: 0.1
+vertAccLim: 20
+hgtCompFiltOmega: 3
+spdCompFiltOmega: 2
+rollComp: 10
+spdWeight: 1
+pitchDamp: 0.3
+maxPitch: 15
+minPitch: -15
+
+# vehicle parameters
+throttle_cruise: 4
+throttle_max: 100
+throttle_min: -100
+
+# physics paramerters
+gravity: 32.174

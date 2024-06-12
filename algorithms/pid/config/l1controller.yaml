@@ -1,0 +1,8 @@
+# l1 controller parameters
+L1_period: 17
+L1_damping: 0.75
+L1_xtrack_i_gain: 0.02
+loiter_bank_limit: 0
+
+# physics paramerters
+gravity: 32.174

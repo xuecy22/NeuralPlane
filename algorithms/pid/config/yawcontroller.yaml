@@ -1,0 +1,19 @@
+# pid config
+Kp: 1
+Ki: 0.3
+Kd: 0.05
+Kff: 0.3
+Kimax: 0.666
+
+# yawcontroller config
+KA: 0
+KI: 0
+KD: 0
+KFF: 1
+imax: 1500
+rate_enable: 0
+tau: 0.2
+rmax_pos: 0
+
+# physics paramerters
+gravity: 32.174

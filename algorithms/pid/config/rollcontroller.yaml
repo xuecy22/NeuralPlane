@@ -1,0 +1,10 @@
+# pid config
+Kp: 10
+Ki: 0.3
+Kd: 0
+Kff: 0.3
+Kimax: 0.666
+
+# rollcontroller config
+tau: 0.5
+rmax_pos: 0
