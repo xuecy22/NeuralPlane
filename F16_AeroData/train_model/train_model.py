@@ -230,7 +230,7 @@ def train(train_X, train_Y, file_name):
             best_model = model.state_dict()
             min_test_loss = test_loss_list[-1]
             max_test_r2 = test_r2
-    torch.save(best_model, "./model1/" + file_name + "-" + str(max_test_r2) + "-" + str(min_test_loss) + ".pth")
+    torch.save(best_model, "./model/" + file_name + "-" + str(max_test_r2) + "-" + str(min_test_loss) + ".pth")
     # tmp = open("./train_result/" + file_name + "_result_loss" + ".csv", 'w', newline='')
     # csv_write = csv.writer(tmp)
     # csv_write.writerow(["train_loss", "test_loss", "test_r2"])
