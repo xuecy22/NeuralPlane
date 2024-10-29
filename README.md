@@ -1,4 +1,4 @@
-# NeuralPlane: An Efficiently Parallelizable Platform for Fixed-wing Aircraft Control with Reinforcement Learning
+# NeuralPlane: An Efficiently Parallelizable Platform for Fixed-wing Aircraft Control with Reinforcement Learning (NeurIPS 2024)
 ## Introduction
 We introduce NeuralPlane, the first benchmark platform for large-scale parallel simulations of fixed-wing aircraft. NeuralPlane significantly boosts high-fidelity simulation via GPU-accelerated Flight Dynamics Model (FDM) computation, achieving a single-step simulation time of just 0.2 seconds at a parallel scale of $10^6$ aircraft, far exceeding current platforms. We also provide clear code templates, comprehensive evaluation and visualization tools, and hierarchical frameworks for integrating RL and traditional control methods. We believe that NeuralPlane can accelerate the development of RL-based fixed-wing flight control and serve as a new challenging benchmark for the RL community.
 
@@ -11,7 +11,7 @@ We introduce NeuralPlane, the first benchmark platform for large-scale parallel 
 ## Install
 ```
 git clone ......
-cd f16sim
+cd NeuralPlane
 
 # conda install
 conda env create -f conda_env.yml
@@ -38,6 +38,28 @@ We provide all task configs in  `envs/configs`, each config corresponds to a tas
 
 ## Models
 We provide several classical fixed-wing aircraft dynamics models, such as the Cessna 172P and F16. It also features clear interfaces, enabling researchers to integrate their own fixed-wing aircraft models.
+
+***
+
+## How to Design Your Own Tasks
+### Parameters
+We provide clear parameters to design your own tasks based on the given task template, including Heading, Control and Tracking tasks. The parameters are described as follows. The parameters can be set in `envs/configs/*.yaml`.
+| Parameter   | Type        | Description | Unit |
+| ----------- | ----------- | ----------- | ---- |
+| airspeed    | atmos config| the wind speed in the environment | feet/s |
+| noise_scale | aircraft config | noise scale in aircraft sensing systems | |
+| model | aircraft config | type of aircraft | |
+| sim_freq | simulation config | frequency of agent interaction with the environment | Hz |
+| num_agents | simulation config | the number of agents in the environment | |
+| num_actions | simulation config | dimension of the action space | |
+| num_observation | simulation config | dimension of the observation space | |
+| max_steps | simulation config | maximum number of steps allowed by the environment | |
+| max_pitch_increment | target config | maximum setting range for pitch targets | rad |
+| max_heading_increment | target config | maximum setting range for yaw targets | rad |
+| max_velocities_u_increment | target config | maximum setting range for velocity targets | feet/s |
+| max_altitude_increment | target config | maximum setting range for velocity targets | feet/s |
+| max_check_interval | target config
+| min_check_interval | target config
 
 ***
 
