@@ -1,4 +1,4 @@
-from mexndinterp import interpn
+from .mexndinterp import interpn
 import torch
 import time
 
